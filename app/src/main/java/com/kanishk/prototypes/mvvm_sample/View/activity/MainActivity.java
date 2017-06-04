@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.kanishk.prototypes.mvvm_sample.Bus.Event.IntentEvent;
 import com.kanishk.prototypes.mvvm_sample.Bus.Event.PostEvent;
 import com.kanishk.prototypes.mvvm_sample.Bus.EventModel.PostEventModel;
 import com.kanishk.prototypes.mvvm_sample.Data.ApplicationManager;
@@ -24,6 +26,7 @@ import com.kanishk.prototypes.mvvm_sample.View.adapter.ApiRefAdapter;
 import com.kanishk.prototypes.mvvm_sample.View.adapter.PostAdapter;
 import com.kanishk.prototypes.mvvm_sample.View.adapter.QuickShotAdapter;
 import com.kanishk.prototypes.mvvm_sample.View.adapter.VideoAdapter;
+import com.kanishk.prototypes.mvvm_sample.View.fragment.SlideshowDialogFragment;
 import com.kanishk.prototypes.mvvm_sample.ViewModel.MainActivityViewModel;
 import com.kanishk.prototypes.mvvm_sample.databinding.ActivityMainBinding;
 
@@ -31,7 +34,7 @@ import org.json.JSONException;
 
 import java.io.IOException;
 
-public class MainActivity extends BaseActivity implements PostEvent {
+public class MainActivity extends BaseActivity implements PostEvent, IntentEvent {
 
     private final Context context = MainActivity.this;
 
@@ -40,6 +43,8 @@ public class MainActivity extends BaseActivity implements PostEvent {
     private Toolbar toolbar;
     private ActivityMainBinding mainBinding;
     private PostDataManager postDataManager;
+    private PostEventModel eventModel;
+    private Bundle bundle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +139,7 @@ public class MainActivity extends BaseActivity implements PostEvent {
 
     @Override
     public void onDataReceived(PostEventModel eventModel) {
+        this.eventModel = eventModel;
         switch (eventModel.getType()) {
             case "Video" :
                 VideoAdapter adapterVideo = new VideoAdapter(context, eventModel.getVideos());
@@ -152,6 +158,9 @@ public class MainActivity extends BaseActivity implements PostEvent {
                 break;
             case "QuickShot" :
                 QuickShotAdapter quickShotAdapter = new QuickShotAdapter(context, eventModel.getQuickshots());
+                bundle = new Bundle();
+                bundle.putSerializable("images", eventModel.getQuickshots());
+                bundle.putString("for", "image");
                 StaggeredGridLayoutManager grid = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
                 recyclerView.setLayoutManager(grid);
                 recyclerView.setHasFixedSize(true);
@@ -168,5 +177,17 @@ public class MainActivity extends BaseActivity implements PostEvent {
     public void onDataUpdate(PostEventModel eventModel) {
         adapter.addNewPost(eventModel.getPosts().get(0));
         recyclerView.smoothScrollToPosition(0);
+    }
+
+    @Override
+    public void onIntentReceived(Intent intent) {
+        switch (intent.getStringExtra("type")) {
+            case ApplicationManager.FRAGMENT_SLIDESHOW :
+                bundle.putInt("position", intent.getIntExtra("position", 0));
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                SlideshowDialogFragment newFragment = SlideshowDialogFragment.newInstance();
+                newFragment.setArguments(bundle);
+                newFragment.show(ft, "slideshow");
+        }
     }
 }

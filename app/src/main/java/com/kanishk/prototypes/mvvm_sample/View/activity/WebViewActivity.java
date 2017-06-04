@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +14,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebChromeClient;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.kanishk.prototypes.mvvm_sample.R;
@@ -28,6 +30,8 @@ public class WebViewActivity extends AppCompatActivity implements AdvancedWebVie
     private AdvancedWebView mWebView;
     private ProgressDialog progressDialog;
     private Toolbar toolbar;
+    private Toolbar toolbarSetName;
+    private EditText toolbarSetNameEditText;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -42,21 +46,49 @@ public class WebViewActivity extends AppCompatActivity implements AdvancedWebVie
     private void setupViews() {
         toolbar = (Toolbar) findViewById(R.id.toolbar_clip);
         toolbar.inflateMenu(R.menu.clipview_menu);
+
+        toolbarSetName = (Toolbar) findViewById(R.id.toolbar_set_name);
+        toolbarSetName.inflateMenu(R.menu.setquickshot_name_menu);
+        toolbarSetName.setVisibility(View.GONE);
+        toolbarSetNameEditText = (EditText) findViewById(R.id.set_name);
+
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.action_search :
-                        takeQuickshot();
+                        toolbarSetName.setVisibility(View.VISIBLE);
+                        toolbarSetName.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+                            @Override
+                            public boolean onMenuItemClick(MenuItem menuItem) {
+                                switch (menuItem.getItemId()) {
+                                    case R.id.action_search :
+                                        // TODO: 4/6/17 hide virtual keyboard
+                                        toolbarSetName.setVisibility(View.GONE);
+                                        Handler handler = new Handler();
+                                        handler.postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                takeQuickshot(toolbarSetNameEditText.getText().toString());
+                                            }
+                                        }, 1000);
+                                }
+                                return true;
+                            }
+                        });
                 }
                 return true;
             }
-
-            private void takeQuickshot() {
+            private void takeQuickshot(String name) {
                 Date now = new Date();
+                String mPath;
                 android.text.format.DateFormat.format("yyyy-MM-dd_hh:mm:ss", now);
                 try {
-                    String mPath = Environment.getExternalStorageDirectory().toString() + "/PICTURES/Screenshots/" + "learn_kotlin_" + now + ".jpg";
+                    if (name != null) {
+                        mPath = Environment.getExternalStorageDirectory().toString() + "/PICTURES/Screenshots/" + "learn_kotlin_" + name + ".jpg";
+                    } else {
+                        mPath = Environment.getExternalStorageDirectory().toString() + "/PICTURES/Screenshots/" + "learn_kotlin_" + now + ".jpg";
+                    }
                     Log.e("Saving to .. ", "" + mPath);
                     View v1 = getWindow().getDecorView().getRootView();
                     v1.setDrawingCacheEnabled(true);

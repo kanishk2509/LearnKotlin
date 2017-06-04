@@ -24,6 +24,8 @@ public class ApplicationManager {
     public static final String ACTIVITY_PROGRAMS = "Programs";
     public static final String ACTIVITY_QUICKSHOTS = "Quickshots";
 
+    public static final String FRAGMENT_SLIDESHOW = "fragment_slideshow";
+
     public static void getDashboardItems(Context context) {
         DashboardEvent event = (DashboardEvent) context;
         ArrayList<DashboardItem> list = new ArrayList<>();

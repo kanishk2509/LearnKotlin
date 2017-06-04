@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.kanishk.prototypes.mvvm_sample.ViewModel.SlideshowDialogViewModel">
+        </variable>
+    </data>
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:alpha="0.7">
+
+            <com.kanishk.prototypes.mvvm_sample.Widgets.SecondaryTextStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(viewModel.position)}"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            app:local_path="@{viewModel.path}"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:alpha="0.7"
+            android:layout_alignParentBottom="true">
+
+            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.title}"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -48,4 +48,11 @@ public class IntentManager {
         event.onIntentReceived(intent_lesson);
     }
 
+    public static void moveToSlideshowFragment(Context activity, int position) {
+        Intent intent_lesson = new Intent(activity, LessonActivity.class);
+        intent_lesson.putExtra("type", ApplicationManager.FRAGMENT_SLIDESHOW);
+        intent_lesson.putExtra("position", position);
+        IntentEvent event = (IntentEvent) activity;
+        event.onIntentReceived(intent_lesson);
+    }
 }

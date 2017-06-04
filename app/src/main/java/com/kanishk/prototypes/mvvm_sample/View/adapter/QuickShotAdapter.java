@@ -40,7 +40,7 @@ public class QuickShotAdapter extends RecyclerView.Adapter<QuickShotAdapter.Quic
     @Override
     public void onBindViewHolder(QuickShotAdapterBindingHolder holder, int i) {
         ItemQuickshotGridBinding binding = holder.binding;
-        binding.setViewModel(new QuickShotViewModel(context, arrayList.get(i)));
+        binding.setViewModel(new QuickShotViewModel(context, arrayList.get(i), arrayList, i));
     }
 
     @Override

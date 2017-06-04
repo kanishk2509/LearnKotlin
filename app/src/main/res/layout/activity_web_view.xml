@@ -42,6 +42,34 @@
                 </RelativeLayout>
 
             </android.support.v7.widget.Toolbar>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_set_name"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorRed"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/set_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:textSize="16dp"
+                        android:textColor="@color/whitePrimary"
+                        android:hint="Enter a name for your quickshot (optional)"
+                        android:textColorHint="@color/colorWhite"
+                        android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
         </android.support.design.widget.AppBarLayout>
 
         <im.delight.android.webview.AdvancedWebView
