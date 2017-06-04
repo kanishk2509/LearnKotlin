@@ -44,6 +44,9 @@ public class DashboardItemViewModel extends BaseObservable {
                     case ApplicationManager.ACTIVITY_QUICKSHOTS :
                         IntentManager.moveToQuickShotActivity(context);
                         break;
+                    case ApplicationManager.ACTIVITY_JAVA_TO_KOTLIN :
+                        IntentManager.moveToLessonActivity(context);
+                        break;
                 }
             }
         };

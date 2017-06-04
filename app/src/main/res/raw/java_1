@@ -1,0 +1,64 @@
+<div style='background:#FFFFFF; font-family: Courier New, Courier; font-size: 10pt; COLOR: #000000; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;'><strong><font color='#7f0055'>class</font></strong>&nbsp;Customer&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>private</font></strong>&nbsp;String&nbsp;name;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>private</font></strong>&nbsp;String&nbsp;email;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>private</font></strong>&nbsp;String&nbsp;company;
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;Customer(String&nbsp;name,&nbsp;String&nbsp;email,&nbsp;String&nbsp;company)&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>this</font></strong>.name&nbsp;=&nbsp;name;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>this</font></strong>.email&nbsp;=&nbsp;email;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>this</font></strong>.company&nbsp;=&nbsp;company;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;String&nbsp;getName()&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;name;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>void</font></strong>&nbsp;setName(String&nbsp;name)&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>this</font></strong>.name&nbsp;=&nbsp;name;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;String&nbsp;getEmail()&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;email;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>void</font></strong>&nbsp;setEmail(String&nbsp;email)&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>this</font></strong>.email&nbsp;=&nbsp;email;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;String&nbsp;getCompany()&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;company;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>void</font></strong>&nbsp;setCompany(String&nbsp;company)&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>this</font></strong>.company&nbsp;=&nbsp;company;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<font color='#646464'>@Override</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>boolean</font></strong>&nbsp;equals(Object&nbsp;o)&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>if</font></strong>&nbsp;(<strong><font color='#7f0055'>this</font></strong>&nbsp;==&nbsp;o)&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;<strong><font color='#7f0055'>true</font></strong>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>if</font></strong>&nbsp;(o&nbsp;==&nbsp;<strong><font color='#7f0055'>null</font></strong>&nbsp;||&nbsp;getClass()&nbsp;!=&nbsp;o.getClass())&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;<strong><font color='#7f0055'>false</font></strong>;
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer&nbsp;customer&nbsp;=&nbsp;(Customer)&nbsp;o;
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>if</font></strong>&nbsp;(name&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>&nbsp;?&nbsp;!name.equals(customer.name)&nbsp;:&nbsp;customer.name&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>)&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;<strong><font color='#7f0055'>false</font></strong>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>if</font></strong>&nbsp;(email&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>&nbsp;?&nbsp;!email.equals(customer.email)&nbsp;:&nbsp;customer.email&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>)&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;<strong><font color='#7f0055'>false</font></strong>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;company&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>&nbsp;?&nbsp;company.equals(customer.company)&nbsp;:&nbsp;customer.company&nbsp;==&nbsp;<strong><font color='#7f0055'>null</font></strong>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<font color='#646464'>@Override</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;<strong><font color='#7f0055'>int</font></strong>&nbsp;hashCode()&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>int</font></strong>&nbsp;result&nbsp;=&nbsp;name&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>&nbsp;?&nbsp;name.hashCode()&nbsp;:&nbsp;0;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;31&nbsp;*&nbsp;result&nbsp;+&nbsp;(email&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>&nbsp;?&nbsp;email.hashCode()&nbsp;:&nbsp;0);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;31&nbsp;*&nbsp;result&nbsp;+&nbsp;(company&nbsp;!=&nbsp;<strong><font color='#7f0055'>null</font></strong>&nbsp;?&nbsp;company.hashCode()&nbsp;:&nbsp;0);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;result;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<font color='#646464'>@Override</font>
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;String&nbsp;toString()&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;<font color='#2a00ff'>"Customer{"</font>&nbsp;+
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#2a00ff'>"name='"</font>&nbsp;+&nbsp;name&nbsp;+&nbsp;'</font>\<font color='#2a00ff'>''</font>&nbsp;+
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#2a00ff'>",&nbsp;email='"</font>&nbsp;+&nbsp;email&nbsp;+&nbsp;'</font>\<font color='#2a00ff'>''</font>&nbsp;+
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#2a00ff'>",&nbsp;company='"</font>&nbsp;+&nbsp;company&nbsp;+&nbsp;'</font>\<font color='#2a00ff'>''</font>&nbsp;+
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#2a00ff'>'}'</font>;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>}<div style='text-align:right;BORDER-TOP: #ccc 1px dashed'><a href="http://www.togotutor.com/code-to-html/java-to-html.php" target="_blank">Code Formatted by ToGoTutor</a></div></div>

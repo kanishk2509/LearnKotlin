@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.kanishk.prototypes.mvvm_sample.Bus.Event.IntentEvent;
+import com.kanishk.prototypes.mvvm_sample.View.activity.LessonActivity;
 import com.kanishk.prototypes.mvvm_sample.View.activity.MainActivity;
 
 /**
@@ -38,6 +39,13 @@ public class IntentManager {
         intent_quickshot.putExtra("type", ApplicationManager.ACTIVITY_QUICKSHOTS);
         IntentEvent event = (IntentEvent) activity;
         event.onIntentReceived(intent_quickshot);
+    }
+
+    public static void moveToLessonActivity(Context activity) {
+        Intent intent_lesson = new Intent(activity, LessonActivity.class);
+        intent_lesson.putExtra("type", ApplicationManager.ACTIVITY_JAVA_TO_KOTLIN);
+        IntentEvent event = (IntentEvent) activity;
+        event.onIntentReceived(intent_lesson);
     }
 
 }
