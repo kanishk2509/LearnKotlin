@@ -7,24 +7,240 @@
     },
     {
       "serial" : "2",
-      "title" : "Kotlin Tutorial | Hello World",
+      "title" : "Hello World",
       "url" : "H_oGi8uuDpA"
     },
     {
       "serial" : "3",
-      "title" : "Kotlin Tutorial | IntelliJ | Android Studio 3",
+      "title" : "IntelliJ | Android Studio 3",
       "url" : "glX5Yx63_Vs"
     },
     {
       "serial" : "4",
-      "title" : "Kotlin Tutorial | Class | Object",
+      "title" : "Class | Object",
       "url" : "NpveMP5869U"
     },
     {
       "serial" : "5",
-      "title" : "Kotlin Tutorial | Var Val",
+      "title" : "Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "6",
+      "title" : "Android Development with Kotlin — Jake Wharton",
+      "url" : "A2LukgT2mKc"
+    },
+    {
+      "serial" : "7",
+      "title" : "Operators",
+      "url" : "q_XZWtP6KQg"
+    },
+    {
+      "serial" : "8",
+      "title" : "String Template",
+      "url" : "9XmGh4WgfSg"
+    },
+    {
+      "serial" : "9",
+      "title" : "If Else Statement",
+      "url" : "qaqKps5mNts"
+    },
+    {
+      "serial" : "10",
+      "title" : "String comparison",
+      "url" : "Fh4chRUL5kE"
+    },
+    {
+      "serial" : "11",
+      "title" : "Null Handling",
+      "url" : "AWM5cAipEp0"
+    },
+    {
+      "serial" : "12",
+      "title" : "When Expression",
+      "url" : "TrUGG0nENMo"
+    },
+    {
+      "serial" : "13",
+      "title" : "Loops and range",
+      "url" : "bDmXJLV-HmA"
+    },
+    {
+      "serial" : "14",
+      "title" : "List and map",
+      "url" : "FUqD6srpuPY"
+    },
+    {
+      "serial" : "15",
+      "title" : "Function Expression",
+      "url" : "XOIC-aHyOag"
+    },
+    {
+      "serial" : "16",
+      "title" : "Calling Kotlin from Java",
+      "url" : "n0fdpvOdIbo"
+    },
+    {
+      "serial" : "17",
+      "title" : "Default and Named Parameters",
+      "url" : "fr1K_0duf78"
+    },
+    {
+      "serial" : "18",
+      "title" : "String to Integer",
+      "url" : "4tlsFbNLrl8"
+    },
+    {
+      "serial" : "19",
+      "title" : "Try expression",
+      "url" : "RMe0v0JRuio"
+    },
+    {
+      "serial" : "20",
+      "title" : " Extension function",
+      "url" : "JzaKJNt4eXk"
+    },
+    {
+      "serial" : "21",
+      "title" : "Infix and Operator Overloading",
+      "url" : "vqY58JbLr-U"
+    },
+    {
+      "serial" : "22",
+      "title" : "Recursion",
+      "url" : "d39zxt6NWNk"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
+      "url" : "4YF_DUMQqFA"
+    },
+    {
+      "serial" : "5",
+      "title" : " Var Val",
       "url" : "4YF_DUMQqFA"
     }
+
   ],
   "ref" : [
     {
@@ -78,54 +294,54 @@
       "url" : "https://kotlinlang.org/docs/reference/basic-syntax.html#using-type-checks-and-automatic-casts"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "11",
+      "title" : "Instance Checks",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#instance-checks"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "12",
+      "title" : "Traversing a map/list of pairs",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#traversing-a-maplist-of-pairs"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "13",
+      "title" : "Using ranges",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#using-ranges"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "14",
+      "title" : "Return on when statement",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#return-on-when-statement"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "15",
+      "title" : "'try/catch' expression",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#trycatch-expression"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "16",
+      "title" : "'if' expression",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#if-expression"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "17",
+      "title" : "Single-expression function",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#single-expression-functions"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "18",
+      "title" : "Calling multiple methods on an object instance ('with')",
+      "url" : "https://kotlinlang.org/docs/reference/idioms.html#calling-multiple-methods-on-an-object-instance-with"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "19",
+      "title" : "Lambdas",
+      "url" : "https://kotlinlang.org/docs/reference/coding-conventions.html#lambdas"
     },
     {
-      "serial" : "3",
-      "title" : "Using Kotlin for Android Development",
-      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+      "serial" : "20",
+      "title" : "Class header formatting",
+      "url" : "https://kotlinlang.org/docs/reference/coding-conventions.html#class-header-formatting"
     },
     {
       "serial" : "3",
