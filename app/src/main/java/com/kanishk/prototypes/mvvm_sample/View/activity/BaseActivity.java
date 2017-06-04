@@ -1,19 +1,16 @@
 package com.kanishk.prototypes.mvvm_sample.View.activity;
 
-import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 
 import com.claudiodegio.msv.BaseMaterialSearchView;
 import com.kanishk.prototypes.mvvm_sample.R;
-import com.kanishk.prototypes.mvvm_sample.ViewModel.BaseActivityViewModel;
-import com.kanishk.prototypes.mvvm_sample.databinding.ActivityBaseBinding;
-import com.kanishk.prototypes.mvvm_sample.databinding.ActivityHomeBinding;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
+    private static String bufferString;
     private BaseMaterialSearchView mSearchView;
     Toolbar mToolbar;
 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.kanishk.prototypes.mvvm_sample.ViewModel.VideoViewModel">
+        </variable>
+    </data>
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:onClick="@{viewModel.onClickVideo}">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:url="@{viewModel.thumbnail}"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_centerVertical="true">
+
+            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="@{viewModel.title}"
+                android:textSize="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:maxLines="2"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

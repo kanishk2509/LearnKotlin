@@ -1,0 +1,336 @@
+{
+  "videos" : [
+    {
+      "serial" : "1",
+      "title" : "Kotlin Tutorial",
+      "url" : "H_oGi8uuDpA"
+    },
+    {
+      "serial" : "2",
+      "title" : "Kotlin Tutorial | Hello World",
+      "url" : "H_oGi8uuDpA"
+    },
+    {
+      "serial" : "3",
+      "title" : "Kotlin Tutorial | IntelliJ | Android Studio 3",
+      "url" : "glX5Yx63_Vs"
+    },
+    {
+      "serial" : "4",
+      "title" : "Kotlin Tutorial | Class | Object",
+      "url" : "NpveMP5869U"
+    },
+    {
+      "serial" : "5",
+      "title" : "Kotlin Tutorial | Var Val",
+      "url" : "4YF_DUMQqFA"
+    }
+  ],
+  "ref" : [
+    {
+      "serial" : "1",
+      "title" : "Using Kotlin for Server-side Development",
+      "url" : "https://kotlinlang.org/docs/reference/server-overview.html#using-kotlin-for-server-side-development"
+    },
+    {
+      "serial" : "2",
+      "title" : "Frameworks for Server-side Development with Kotlin",
+      "url" : "https://raw.githubusercontent.com/kanishk2509/Kotlin-MVVM-Interface/master/app/src/main/java/com/kanishk/prototypes/mvvm_sample/View/activity/MainActivity.kt"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "4",
+      "title" : "Using Kotlin for Javascript",
+      "url" : "https://kotlinlang.org/docs/reference/js-overview.html#kotlin-javascript-overview"
+    },
+    {
+      "serial" : "5",
+      "title" : "Basic Syntax",
+      "url" : "https://kotlinlang.org/docs/reference/basic-syntax.html#basic-syntax"
+    },
+    {
+      "serial" : "6",
+      "title" : "Defining functions",
+      "url" : "https://kotlinlang.org/docs/reference/basic-syntax.html#defining-functions"
+    },
+    {
+      "serial" : "7",
+      "title" : "Defining local variables",
+      "url" : "https://kotlinlang.org/docs/reference/basic-syntax.html#defining-local-variables"
+    },
+    {
+      "serial" : "8",
+      "title" : "Using string template",
+      "url" : "https://kotlinlang.org/docs/reference/basic-syntax.html#using-string-templates"
+    },
+    {
+      "serial" : "9",
+      "title" : "Using nullable values and checking for null",
+      "url" : "https://kotlinlang.org/docs/reference/basic-syntax.html#using-nullable-values-and-checking-for-null-keyword-"
+    },
+    {
+      "serial" : "10",
+      "title" : "Using type checks and automatic casts",
+      "url" : "https://kotlinlang.org/docs/reference/basic-syntax.html#using-type-checks-and-automatic-casts"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    },
+    {
+      "serial" : "3",
+      "title" : "Using Kotlin for Android Development",
+      "url" : "https://kotlinlang.org/docs/reference/android-overview.html#using-kotlin-for-android-development"
+    }
+  ]
+}

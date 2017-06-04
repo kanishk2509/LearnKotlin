@@ -1,10 +1,10 @@
 package com.kanishk.prototypes.mvvm_sample.ViewModel;
 
 import android.content.Context;
-import android.content.Intent;
 import android.databinding.BaseObservable;
 import android.view.View;
 
+import com.kanishk.prototypes.mvvm_sample.Data.ApplicationManager;
 import com.kanishk.prototypes.mvvm_sample.Data.IntentManager;
 import com.kanishk.prototypes.mvvm_sample.Model.DashboardItem;
 
@@ -34,7 +34,17 @@ public class DashboardItemViewModel extends BaseObservable {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                IntentManager.moveToDashboardItemActivity(context);
+                switch ((getName())) {
+                    case ApplicationManager.ACTIVITY_TUTORIAL_VID :
+                        IntentManager.moveToTutorialVideoActivity(context);
+                        break;
+                    case ApplicationManager.ACTIVITY_API_REF :
+                        IntentManager.moveToApiRefActivity(context);
+                        break;
+                    case ApplicationManager.ACTIVITY_QUICKSHOTS :
+                        IntentManager.moveToQuickShotActivity(context);
+                        break;
+                }
             }
         };
     }
