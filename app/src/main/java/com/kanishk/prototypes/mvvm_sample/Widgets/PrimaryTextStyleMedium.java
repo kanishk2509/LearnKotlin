@@ -37,7 +37,7 @@ public class PrimaryTextStyleMedium extends TextView {
 
     private void applyFont(Context context) {
         //Typeface font = FontCache.getTypeface("fonts/Montserrat/Montserrat-Regular.ttf", context);
-        Typeface font = FontCache.getTypeface("fonts/Catamaran/Catamaran-Regular.ttf", context);
+        Typeface font = FontCache.getTypeface("fonts/karla/Karla-Bold.ttf", context);
         setTypeface(font);
     }
 }

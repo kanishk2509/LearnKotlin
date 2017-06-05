@@ -29,12 +29,12 @@ public class ApplicationManager {
     public static void getDashboardItems(Context context) {
         DashboardEvent event = (DashboardEvent) context;
         ArrayList<DashboardItem> list = new ArrayList<>();
-        list.add(new DashboardItem(R.drawable.ic_rocket, ACTIVITY_JAVA_TO_KOTLIN));
-        list.add(new DashboardItem(R.drawable.ic_library, ACTIVITY_API_REF));
-        list.add(new DashboardItem(R.drawable.ic_video_player_black, ACTIVITY_TUTORIAL_VID));
-        list.add(new DashboardItem(R.drawable.ic_conference, ACTIVITY_COMMUNITY));
-        list.add(new DashboardItem(R.drawable.ic_puzzle, ACTIVITY_PROGRAMS));
-        list.add(new DashboardItem(R.drawable.ic_microscope, ACTIVITY_QUICKSHOTS));
+        list.add(new DashboardItem(R.drawable.ic_alphabet, ACTIVITY_JAVA_TO_KOTLIN));
+        list.add(new DashboardItem(R.drawable.ic_book, ACTIVITY_API_REF));
+        list.add(new DashboardItem(R.drawable.ic_lamp, ACTIVITY_QUICKSHOTS));
+        list.add(new DashboardItem(R.drawable.ic_laptop, ACTIVITY_TUTORIAL_VID));
+        list.add(new DashboardItem(R.drawable.ic_diploma, ACTIVITY_COMMUNITY));
+        list.add(new DashboardItem(R.drawable.ic_keyboard, ACTIVITY_PROGRAMS));
         event.onDashboardReceived(list);
     }
 
