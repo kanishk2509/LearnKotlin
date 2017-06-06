@@ -36,7 +36,7 @@ public class SecondaryTextStyle extends TextView {
     }
 
     private void applyFont(Context context) {
-        Typeface font = FontCache.getTypeface("fonts/Montserrat/Montserrat-Regular.ttf", context);
+        Typeface font = FontCache.getTypeface("fonts/karla/Karla-Regular.ttf", context);
         setTypeface(font);
     }
 }

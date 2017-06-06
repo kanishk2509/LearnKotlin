@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
         <variable
@@ -25,8 +24,10 @@
                 android:id="@+id/toolbar_home"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay">
+                android:background="@color/colorWhite"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:elevation="0dp"
+                android:shadowRadius="0">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -39,7 +40,7 @@
                         android:text="@string/app_name"
                         android:layout_centerVertical="true"
                         android:textSize="@dimen/text_heading"
-                        android:textColor="@color/colorWhite"/>
+                        android:textColor="@color/colorLynch"/>
 
                 </RelativeLayout>
 
@@ -67,10 +68,265 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                    android:id="@+id/learning_dashboard_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="@dimen/view_margin_start"
+                    android:textSize="18dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorLynch"/>
+
+                <com.kanishk.prototypes.mvvm_sample.Widgets.SecondaryTextStyle
+                    android:id="@+id/learning_dashboard_placeholder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Every thing you need by your side."
+                    android:layout_below="@+id/learning_dashboard_placeholder"
+                    android:layout_marginLeft="@dimen/view_margin_start"
+                    android:layout_marginStart="@dimen/view_margin_start"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/colorLynch"
+                    android:textSize="14dp"/>
+
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/home_activity_dashboard"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/learning_dashboard_placeholder_description"
+                    android:layout_marginTop="24dp"/>
+
+                <!-- StreakView Start-->
+                <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                    android:id="@+id/learning_streak_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learning Streak"
+                    android:textAllCaps="true"
+                    android:layout_below="@id/home_activity_dashboard"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="@dimen/view_margin_start"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <com.kanishk.prototypes.mvvm_sample.Widgets.SecondaryTextStyle
+                    android:id="@+id/learning_streak_placeholder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learn regularly to maintain a good score!"
+                    android:layout_below="@+id/learning_streak_placeholder"
+                    android:layout_marginLeft="@dimen/view_margin_start"
+                    android:layout_marginStart="@dimen/view_margin_start"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/streak_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/learning_streak_placeholder_description">
+
+                    <ImageView
+                        android:id="@+id/learning_streak_cup"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/ic_cup"
+                        android:layout_marginStart="-60dp"
+                        android:layout_marginLeft="-60dp"
+                        android:layout_marginTop="24dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="128dp"
+                        android:layout_toRightOf="@+id/learning_streak_cup"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="48dp">
+
+                        <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                            android:id="@+id/learning_streak_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="34dp"
+                            android:text="0 days"
+                            android:layout_alignParentTop="true"
+                            android:textColor="@color/colorLynch"/>
+
+                        <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                            android:id="@+id/learning_streak_score_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Maintaining a good score lets us improve our course content for your personal taste and learning speed."
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/colorLynch"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <!-- StreakView END -->
+
+                <View
+                    android:id="@+id/separator_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_55"
+                    android:layout_below="@id/streak_view_container"
+                    android:layout_marginTop="24dp"/>
+
+                <!-- StatView Start -->
+                <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                    android:id="@+id/learning_stat_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Stats"
+                    android:textAllCaps="true"
+                    android:layout_below="@+id/separator_1"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="@dimen/view_margin_start"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPurpleMedium"/>
+
+                <com.kanishk.prototypes.mvvm_sample.Widgets.SecondaryTextStyle
+                    android:id="@+id/learning_stat_placeholder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track your progress!"
+                    android:layout_below="@+id/learning_stat_placeholder"
+                    android:layout_marginLeft="@dimen/view_margin_start"
+                    android:layout_marginStart="@dimen/view_margin_start"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/colorPurpleMedium"
+                    android:textSize="14dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/stat_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/learning_stat_placeholder_description">
+
+                    <ImageView
+                        android:id="@+id/learning_stat_image"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/ic_medal"
+                        android:layout_marginEnd="-60dp"
+                        android:layout_marginRight="-60dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_alignParentEnd="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="128dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:id="@+id/a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+
+                            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0min"
+                                android:textSize="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorLynch"/>
+
+                            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="average time spent"
+                                android:layout_marginEnd="48dp"
+                                android:textSize="16dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:textColor="@color/colorLynch"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/a"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+
+                            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorLynch"/>
+
+                            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="videos watched"
+                                android:layout_marginEnd="48dp"
+                                android:textSize="16dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorLynch"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/b"
+                            android:layout_margin="4dp"
+                            android:gravity="center">
+
+                            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0min"
+                                android:textSize="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorLynch"/>
+
+                            <com.kanishk.prototypes.mvvm_sample.Widgets.PrimaryTextStyleMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="spent learning Kotlin"
+                                android:layout_marginEnd="48dp"
+                                android:textSize="16dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorLynch"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <!-- StateView End-->
+
+                <View
+                    android:id="@+id/separator_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_35"
+                    android:layout_below="@id/stat_view_container"
+                    android:layout_marginTop="24dp"/>
 
             </RelativeLayout>
 

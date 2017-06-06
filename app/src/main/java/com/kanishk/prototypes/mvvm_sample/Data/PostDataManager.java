@@ -96,12 +96,7 @@ public class PostDataManager {
         ArrayList<Quickshot> list = new ArrayList<>();
         File file = new File(Environment.getExternalStorageDirectory() + File.separator + "/PICTURES/Screenshots");
         if (file.isDirectory()) {
-            listFile = file.listFiles(new FilenameFilter() {
-                @Override
-                public boolean accept(File file, String s) {
-                    return s.startsWith("learn_kotlin_");
-                }
-            });
+            listFile = file.listFiles((file1, s) -> s.startsWith("learn_kotlin_"));
             FilePathStrings = new String[listFile.length];
             FileNameStrings = new String[listFile.length];
             for (int i = 0; i < listFile.length; i++) {
